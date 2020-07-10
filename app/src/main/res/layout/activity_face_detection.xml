@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceDetectionActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_gallery_icon"
+        />
+
+<!--    <com.camerakit.CameraKitView-->
+<!--        android:id="@+id/camera"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:keepScreenOn="true"-->
+<!--        app:camera_flash="auto"-->
+<!--        app:camera_facing="back"-->
+<!--        app:camera_focus="continuous"-->
+<!--        app:camera_permissions="camera" />-->
+
+    <com.nisith.androidvisionproject.Halper.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        />
+
+    <Button
+        android:id="@+id/detect_face_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_style"
+        android:text="Detect Face"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detect_face_button"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        >
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="13dp"
+            />
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/image_labeling_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image  Labeling"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/text_recognizer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text  Recognizer"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/image_labeling_button"
+        />
+
+    <Button
+        android:id="@+id/face_detection_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Face  Detection"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/text_recognizer_button"
+        />
+
+    <Button
+        android:id="@+id/face_detection_with_camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Face  Detection  With Camera"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/face_detection_button"
+        />
+
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perform Translate"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/face_detection_with_camera_button"
+        />
+
+    <Button
+        android:id="@+id/language_recognition_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language Recognition"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background_style"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/face_detection_with_camera_button"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FaceDetectionWithCameraActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ckFacing="front"
+        app:ckFlash="auto"
+        app:ckDoubleTapToToggleFacing="true"
+        app:ckPinchToZoom="true"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <Button
+        android:id="@+id/capture_photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background_style"
+        android:text="Capture Photo"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        />
+
+    <ImageView
+        android:id="@+id/camera_facing_image_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_swithc_camers"
+        android:layout_toStartOf="@+id/capture_photo_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        />
+
+
+</RelativeLayout>
